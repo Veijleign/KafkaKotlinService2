@@ -2,9 +2,9 @@ package com.test.kafkaoutboxpatternsecond.kafka.consumer
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.test.kafkaoutboxpatternsecond.kafka.config.TopicConfiguration
-import com.test.kafkaoutboxpatternsecond.payload.UserDTO
+import com.test.kafkaoutboxpatternsecond.kafka.payload.KafkaUserDTO
+import io.github.oshai.kotlinlogging.KotlinLogging
 import lombok.extern.slf4j.Slf4j
-import org.slf4j.Logger
 import org.springframework.kafka.annotation.KafkaListener
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.stereotype.Service
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service
 class KafkaConsumerService(
     private val objectMapper: ObjectMapper
 ) {
-    lateinit var logger: Logger
+    private val logger = KotlinLogging.logger {}
 
     @KafkaListener(
         topics = [TopicConfiguration.FIRST_TO_SECOND],
@@ -22,9 +22,9 @@ class KafkaConsumerService(
         containerFactory = "kafkaListenerContainerFactory",
     )
     fun consume(@Payload message : ByteArray) {
-        val userDto : UserDTO = objectMapper.readValue(message, UserDTO::class.java)
+        val userDto : KafkaUserDTO = objectMapper.readValue(message, KafkaUserDTO::class.java)
 
-        logger.info("Received message $userDto")
+        logger.info { "Get user paginated: filter $userDto" }
 
     }
 

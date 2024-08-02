@@ -1,8 +1,9 @@
 package com.test.kafkaoutboxpatternsecond.kafka.config
 
 
-import com.test.kafkaoutboxpatternsecond.payload.UserDTO
+import com.test.kafkaoutboxpatternsecond.kafka.payload.KafkaUserDTO
 import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.common.serialization.ByteArrayDeserializer
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean
@@ -26,18 +27,18 @@ class KafkaConsumerConfig {
         val props: MutableMap<String, Any> = HashMap()
 
         props[ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG] = bootstrapServers
-        props[ConsumerConfig.GROUP_ID_CONFIG] = "testConsumer"
+        props[ConsumerConfig.GROUP_ID_CONFIG] = "firstToSecond"
 
         props[JsonDeserializer.USE_TYPE_INFO_HEADERS] = false
 //        props[JsonDeserializer.TRUSTED_PACKAGES] = "test.packages"
 
         props[ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG] = StringDeserializer::class.java
-        props[ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG] = JsonDeserializer::class.java.name
+        props[ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG] = ByteArrayDeserializer::class.java.name
 
         props[ErrorHandlingDeserializer.KEY_DESERIALIZER_CLASS] = JsonDeserializer::class.java
         props[ErrorHandlingDeserializer.VALUE_DESERIALIZER_CLASS] = JsonDeserializer::class.java.name
 
-        props[JsonDeserializer.VALUE_DEFAULT_TYPE] = JsonDeserializer::class.java.name
+        props[JsonDeserializer.VALUE_DEFAULT_TYPE] = KafkaUserDTO::class.java.name
 //        props[JsonDeserializer.VALUE_DEFAULT_TYPE] = UserDTO::class.java.name
 
         return DefaultKafkaConsumerFactory(props)

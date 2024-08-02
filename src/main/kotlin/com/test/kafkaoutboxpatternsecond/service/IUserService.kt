@@ -9,6 +9,6 @@ interface IUserService {
     fun getAllUsers(): MutableList<UserDTO>
     fun createUser(dto: CreateUserDTO): UserDTO
     fun getEntity(id: Long): User
-    fun update(id: Long, user: UserDTO): UserDTO
+    fun update(id: Long, dto: UserDTO): UserDTO
     fun delete(id: Long)
 }

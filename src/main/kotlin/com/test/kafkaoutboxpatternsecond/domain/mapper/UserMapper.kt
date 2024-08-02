@@ -14,7 +14,7 @@ class UserMapper {
     )
 
     fun update(entity: User, dto: UserDTO): User {
-        entity.email = dto.username
+        entity.email = dto.email
         entity.firstName = dto.firstName
         entity.lastName = dto.lastName
         return entity
