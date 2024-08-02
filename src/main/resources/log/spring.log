@@ -1,0 +1,214 @@
+2024-08-02T19:32:59.421+03:00  INFO 18736 --- [main] .k.KafkaOutboxPatternSecondApplicationKt : Starting KafkaOutboxPatternSecondApplicationKt using Java 17.0.8 with PID 18736 (C:\Users\User\IdeaProjects\erp\common-context\KafkaOutboxPatternSecond\build\classes\kotlin\main started by User in C:\Users\User\IdeaProjects\erp\common-context\KafkaOutboxPatternSecond)
+2024-08-02T19:32:59.424+03:00  INFO 18736 --- [main] .k.KafkaOutboxPatternSecondApplicationKt : The following 1 profile is active: "dev"
+2024-08-02T19:33:00.131+03:00  INFO 18736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T19:33:00.166+03:00  INFO 18736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2024-08-02T19:33:00.488+03:00  INFO 18736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8012 (http)
+2024-08-02T19:33:00.495+03:00  INFO 18736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T19:33:00.495+03:00  INFO 18736 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T19:33:00.531+03:00  INFO 18736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T19:33:00.532+03:00  INFO 18736 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1079 ms
+2024-08-02T19:33:00.607+03:00  INFO 18736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T19:33:00.705+03:00  INFO 18736 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ba35152
+2024-08-02T19:33:00.706+03:00  INFO 18736 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T19:33:00.794+03:00  INFO 18736 --- [main] liquibase.database                       : Set default schema name to public
+2024-08-02T19:33:00.869+03:00  INFO 18736 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-08-02T19:33:00.989+03:00  INFO 18736 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-02T19:33:01.002+03:00  INFO 18736 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-08-02T19:33:01.004+03:00  INFO 18736 --- [main] liquibase.util                           : UPDATE SUMMARY
+2024-08-02T19:33:01.004+03:00  INFO 18736 --- [main] liquibase.util                           : Run:                          0
+2024-08-02T19:33:01.005+03:00  INFO 18736 --- [main] liquibase.util                           : Previously run:               1
+2024-08-02T19:33:01.005+03:00  INFO 18736 --- [main] liquibase.util                           : Filtered out:                 0
+2024-08-02T19:33:01.005+03:00  INFO 18736 --- [main] liquibase.util                           : -------------------------------
+2024-08-02T19:33:01.005+03:00  INFO 18736 --- [main] liquibase.util                           : Total change sets:            1
+
+2024-08-02T19:33:01.005+03:00  INFO 18736 --- [main] liquibase.util                           : Update summary generated
+2024-08-02T19:33:01.007+03:00  INFO 18736 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-02T19:33:01.009+03:00  INFO 18736 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2024-08-02T19:33:01.009+03:00  INFO 18736 --- [main] liquibase.command                        : Command execution complete
+2024-08-02T19:33:01.058+03:00  INFO 18736 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-02T19:33:01.096+03:00  INFO 18736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-02T19:33:01.121+03:00  INFO 18736 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-02T19:33:01.334+03:00  INFO 18736 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T19:33:01.366+03:00  WARN 18736 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-02T19:33:01.716+03:00  INFO 18736 --- [main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.test.kafkaoutboxpatternsecond.domain.entity.User (class must be instantiated by Interceptor)
+2024-08-02T19:33:01.826+03:00  INFO 18736 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-02T19:33:01.846+03:00  INFO 18736 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T19:33:02.115+03:00  WARN 18736 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T19:33:02.412+03:00  INFO 18736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8012 (http) with context path '/'
+2024-08-02T19:33:02.437+03:00  INFO 18736 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [10.11.12.13:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-try1-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = try1
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2024-08-02T19:33:02.466+03:00  INFO 18736 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2024-08-02T19:33:02.559+03:00  INFO 18736 --- [main] o.a.k.clients.consumer.ConsumerConfig    : These configurations '[spring.deserializer.key.delegate.class]' were supplied but are not used yet.
+2024-08-02T19:33:02.560+03:00  INFO 18736 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.7.1
+2024-08-02T19:33:02.560+03:00  INFO 18736 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: e2494e6ffb89f828
+2024-08-02T19:33:02.560+03:00  INFO 18736 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1722616382559
+2024-08-02T19:33:02.562+03:00  INFO 18736 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-try1-1, groupId=try1] Subscribed to topic(s): FIRST_TO_SECOND
+2024-08-02T19:33:02.573+03:00  INFO 18736 --- [main] .k.KafkaOutboxPatternSecondApplicationKt : Started KafkaOutboxPatternSecondApplicationKt in 3.434 seconds (process running for 3.757)
+2024-08-02T19:33:02.787+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-try1-1, groupId=try1] Cluster ID: Rg0AzL3bTNWf_RI2no_eTg
+2024-08-02T19:33:02.788+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Discovered group coordinator 10.11.12.13:9092 (id: 2147483647 rack: null)
+2024-08-02T19:33:02.789+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] (Re-)joining group
+2024-08-02T19:33:02.798+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Request joining group due to: need to re-join with the given member-id: consumer-try1-1-f8b2a2b9-e224-4d8d-96f5-6e6b770d5176
+2024-08-02T19:33:02.798+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] (Re-)joining group
+2024-08-02T19:33:04.252+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Successfully joined group with generation Generation{generationId=30, memberId='consumer-try1-1-f8b2a2b9-e224-4d8d-96f5-6e6b770d5176', protocol='range'}
+2024-08-02T19:33:04.586+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Successfully synced group in generation Generation{generationId=30, memberId='consumer-try1-1-f8b2a2b9-e224-4d8d-96f5-6e6b770d5176', protocol='range'}
+2024-08-02T19:33:04.588+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Notifying assignor about the new Assignment(partitions=[FIRST_TO_SECOND-0])
+2024-08-02T19:33:04.589+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-try1-1, groupId=try1] Adding newly assigned partitions: FIRST_TO_SECOND-0
+2024-08-02T19:33:04.596+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition FIRST_TO_SECOND-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[10.11.12.13:9092 (id: 0 rack: null)], epoch=0}}
+2024-08-02T19:33:04.596+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : try1: partitions assigned: [FIRST_TO_SECOND-0]
+2024-08-02T19:33:04.636+03:00 ERROR 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.kafka.listener.DefaultErrorHandler   : Backoff FixedBackOff{interval=0, currentAttempts=1, maxAttempts=0} exhausted for FIRST_TO_SECOND-0@10
+
+org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method could not be invoked with the incoming message
+Endpoint handler details:
+Method [public void com.test.kafkaoutboxpatternsecond.kafka.consumer.KafkaConsumerService.consume(byte[])]
+Bean [com.test.kafkaoutboxpatternsecond.kafka.consumer.KafkaConsumerService@2fedae96]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2869) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2814) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2778) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.lambda$doInvokeRecordListener$53(KafkaMessageListenerContainer.java:2701) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at io.micrometer.observation.Observation.observe(Observation.java:565) ~[micrometer-observation-1.13.2.jar:1.13.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeRecordListener(KafkaMessageListenerContainer.java:2699) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeWithRecords(KafkaMessageListenerContainer.java:2541) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeRecordListener(KafkaMessageListenerContainer.java:2430) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeListener(KafkaMessageListenerContainer.java:2085) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeIfHaveRecords(KafkaMessageListenerContainer.java:1461) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1426) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1296) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+	Suppressed: org.springframework.kafka.listener.ListenerExecutionFailedException: Restored Stack Trace
+		at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.checkAckArg(MessagingMessageListenerAdapter.java:446) ~[spring-kafka-3.2.2.jar:3.2.2]
+		at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:424) ~[spring-kafka-3.2.2.jar:3.2.2]
+		at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invoke(MessagingMessageListenerAdapter.java:384) ~[spring-kafka-3.2.2.jar:3.2.2]
+		at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:85) ~[spring-kafka-3.2.2.jar:3.2.2]
+		at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50) ~[spring-kafka-3.2.2.jar:3.2.2]
+		at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2800) ~[spring-kafka-3.2.2.jar:3.2.2]
+Caused by: org.springframework.messaging.converter.MessageConversionException: Cannot handle message
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:424) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invoke(MessagingMessageListenerAdapter.java:384) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:85) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2800) ~[spring-kafka-3.2.2.jar:3.2.2]
+	... 12 common frames omitted
+Caused by: org.springframework.messaging.converter.MessageConversionException: Cannot convert from [org.springframework.kafka.support.serializer.JsonDeserializer] to [[B] for GenericMessage [payload=org.springframework.kafka.support.serializer.JsonDeserializer@6395c672, headers={kafka_offset=10, kafka_consumer=org.springframework.kafka.core.DefaultKafkaConsumerFactory$ExtendedKafkaConsumer@51a66f9a, kafka_timestampType=CREATE_TIME, kafka_receivedPartitionId=0, kafka_receivedTopic=FIRST_TO_SECOND, kafka_receivedTimestamp=1722616223876, kafka_groupId=try1}]
+	at org.springframework.messaging.handler.annotation.support.PayloadMethodArgumentResolver.resolveArgument(PayloadMethodArgumentResolver.java:151) ~[spring-messaging-6.1.11.jar:6.1.11]
+	at org.springframework.kafka.listener.adapter.KafkaNullAwarePayloadArgumentResolver.resolveArgument(KafkaNullAwarePayloadArgumentResolver.java:48) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:118) ~[spring-messaging-6.1.11.jar:6.1.11]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:147) ~[spring-messaging-6.1.11.jar:6.1.11]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:115) ~[spring-messaging-6.1.11.jar:6.1.11]
+	at org.springframework.kafka.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:70) ~[spring-kafka-3.2.2.jar:3.2.2]
+	at org.springframework.kafka.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:420) ~[spring-kafka-3.2.2.jar:3.2.2]
+	... 16 common frames omitted
+
+2024-08-02T19:39:01.421+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-try1-1, groupId=try1] Revoke previously assigned partitions FIRST_TO_SECOND-0
+2024-08-02T19:39:01.421+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : try1: partitions revoked: [FIRST_TO_SECOND-0]
+2024-08-02T19:39:01.421+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Member consumer-try1-1-f8b2a2b9-e224-4d8d-96f5-6e6b770d5176 sending LeaveGroup request to coordinator 10.11.12.13:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2024-08-02T19:39:01.423+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-08-02T19:39:01.423+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Request joining group due to: consumer pro-actively leaving the group
+2024-08-02T19:39:01.423+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-try1-1, groupId=try1] Unsubscribed all topics or patterns and assigned partitions
+2024-08-02T19:39:01.423+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Resetting generation and member id due to: consumer pro-actively leaving the group
+2024-08-02T19:39:01.423+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-try1-1, groupId=try1] Request joining group due to: consumer pro-actively leaving the group
+2024-08-02T19:39:01.517+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2024-08-02T19:39:01.517+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-08-02T19:39:01.517+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2024-08-02T19:39:01.517+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2024-08-02T19:39:01.521+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-try1-1 unregistered
+2024-08-02T19:39:01.521+03:00  INFO 18736 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : try1: Consumer stopped
+2024-08-02T19:39:01.604+03:00  INFO 18736 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T19:39:01.605+03:00  INFO 18736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T19:39:01.607+03:00  INFO 18736 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
